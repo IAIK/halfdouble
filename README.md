@@ -19,6 +19,13 @@ For page table modifications, we use the [PTEditor](https://github.com/misc0110/
 make pteditor
 ```
 
+### Running on the Provided Hardware
+If the PoCs are run on the provided hardware, the PTEditor module is precompiled with the kernel. Therefore, executing the following command is enough:
+
+```
+modprobe pteditor
+```
+
 ## Ubuntu Packages
 
 To build the PoC for both Arm and x86, we need to install a cross-compiler and additional tools (we assume the host is x86):

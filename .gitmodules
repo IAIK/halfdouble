@@ -1,3 +1,3 @@
 [submodule "PTEditor"]
 	path = PTEditor
-	url = git@github.com:misc0110/PTEditor.git
+	url = https://github.com/misc0110/PTEditor.git

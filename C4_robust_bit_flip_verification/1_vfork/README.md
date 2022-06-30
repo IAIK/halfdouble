@@ -12,6 +12,14 @@ Build the PoC with:
 make
 ```
 
+## PTEditor Optional
+
+Please follow [PTEditor](../../README.md) to install the PTEditor kernel module. If the PoC is executed on the provided hardware, the pteditor kernel module is included in the custom kernel so running the following is sufficient to load the module:
+
+```
+modprobe pteditor
+```
+
 ## Deploying the Artifacts
 
 Please see [Deploying the Artifacts](../../README.md).

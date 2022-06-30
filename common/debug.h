@@ -64,9 +64,9 @@ static uint64_t get_physical_address(uint8_t const *p) {
 
     bool is_huge = is_huge_page(ppn);
 
-    if ( is_huge ) {
+    /*if ( is_huge ) {
         printf("error huge!\n");
-    }
+    }*/
 
     return (ppn * 0x1000) | (vadr & (is_huge ? MASK_2MB : MASK_4kB));
 }

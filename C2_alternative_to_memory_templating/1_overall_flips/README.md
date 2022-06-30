@@ -15,6 +15,13 @@ make
 
 The [Makefile](Makefile) builds both `aarch64` and `x86` versions. The PoC requires huge pages and the pteditor module as on the Chromebooks and assumes DRAM addressing functions as on the Chromebooks.
 
+## PTEditor Required
+
+Please follow [PTEditor](../../README.md) to install the PTEditor kernel module. If the PoC is executed on the provided hardware, the pteditor kernel module is included in the custom kernel so running the following is sufficient to load the module:
+
+```
+modprobe pteditor
+```
 
 ## Deploying the Artifacts
 
