@@ -189,7 +189,7 @@ int main(int argc, char *argv[]) {
 
     fprintf(stderr, "[+] n: %d\n", RUNS);
 
-    for ( int j = 0; j <= 10000; j += 1 ) {
+    for ( int j = 0; j <= 30; j += 1 ) {
         if ( j == 0 ) {
             TRIES = 1;
         }
