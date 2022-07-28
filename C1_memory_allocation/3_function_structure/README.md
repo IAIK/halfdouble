@@ -48,3 +48,9 @@ chromebook;        128;        1.0;        1.6
         s9;        128;        1.0;       0.84
 ```
 
+## Paper result:   
+From 6.1. Paragraph Evaluation:
+
+- average F-score of 0.97 with pattern length of 64
+- average scanning speed of 1.079 MBps
+- Note: The MBps depend on the hardware running the simulation

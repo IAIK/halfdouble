@@ -51,10 +51,6 @@ make DEBUG=1
 
 The [Makefile](Makefile) builds both `aarch64` and `x86` versions. However, the PoC uses the Chromebooks patterns, so the correctness is only given on the actual hardware. However, the `x86` exploit's performance is comparable as the timing side channel is executed correctly. The overhead to detect and store the Chunks is negligible in comparison to the timing side channel.
 
-## Deploying the Artifacts
-
-Please see [Deploying the Artifacts](../../README.md).
-
 ## Running the PoC
 
 The PoC uses the `row_conflict_threshold` (see [U1 - Row Conflict Threshold](../../utility/1_row_conflict_threshold)) as input, i.e., the timing threshold between same-bank access and cross-bank access in ns.
@@ -83,3 +79,10 @@ Chunk: 0x7384d63000 + [ 1204.0 kB] -> c
 Took 30374069617 ns to check 409600000 bytes = 0.028912 GBps
 ```
 
+## Paper result:
+From 6.1. Paragraph Evaluation:
+- less than 3 minutes runtime
+- 19.05 MBps (n=10, s_x=0.002) on Chromebook1
+- 13.03 MBps (n=10, s_x=0.003) on Chromebook2
+- 18.39 MBps (n=10, s_x=0.006) on the OnePlus 5T
+- 46.55 MBps (n=10, s_x=0.455) on the T490s

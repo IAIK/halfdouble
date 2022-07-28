@@ -23,11 +23,6 @@ Please follow [PTEditor](../../README.md) to install the PTEditor kernel module.
 modprobe pteditor
 ```
 
-
-## Deploying the Artifacts
-
-Please see [Deploying the Artifacts](../../README.md).
-
 ## Running the PoC
 
 To run the PoC on the Chromebook, run:
@@ -35,6 +30,8 @@ To run the PoC on the Chromebook, run:
 ```
 ./c2_ecc_aware_aarch64
 ```
+
+Note: This PoC will run in an endless loop and not terminate! To stop hit `Ctrl+c`.
 
 ### Expected output:
 
@@ -49,4 +46,3 @@ FLIP FOUND! 68000575555fd3 != 68000555555fd3 0x75e49448f8
 Hammer rows 44 48, 0x75e4955000 0x75e4980000, 111f55, 111f80  took 2695629 us, 0 flips
 ...
 ```
-

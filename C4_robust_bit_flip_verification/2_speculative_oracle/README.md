@@ -22,10 +22,6 @@ Please follow [PTEditor](../../README.md) to install the PTEditor kernel module.
 modprobe pteditor
 ```
 
-## Deploying the Artifacts
-
-Please see [Deploying the Artifacts](../../README.md).
-
 ## Running the PoC
 To execute the PoC on x86 run:
 
@@ -63,3 +59,26 @@ The expected output of this PoC (run on the t490s):
     7: Success rate: 100.00% - 0.000 ms (+-0.000) [ 0.000 ms (+-0.000) - 0.000 ms (+-0.000)]
 ...
 ```
+
+## Paper result:
+From 6.4. Paragraph Evaluation (1st):
+
+- Chromebook 1:
+  - uses 1 Try
+  - 99.01 % success rate
+  - average runtime of 0.008 ms (n=10 000, s_x= 0.002 )
+
+- Chromebook2:
+  - uses 2 Tries
+  - 99.68 % success rate
+  - average runtime of 0.025 ms (n=10000, s_x=0.006)
+
+- OnePlus 5T:
+  - uses 3 Tries
+  - 99.14 % success rate
+  - average runtime of 0.034 ms (n=10000, s_x=0.011)
+
+- T490s:
+  - uses 20 Tries
+  - 99.94 % success rate
+  - average runtime of 0.018 ms (n=10000, s_x=0.004)

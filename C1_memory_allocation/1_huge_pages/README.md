@@ -23,10 +23,6 @@ make DEBUG=1
 
 The [Makefile](Makefile) builds both `aarch64` and `x86` versions. The PoC requires huge pages as on the Chromebooks.
 
-## Deploying the Artifacts
-
-Please see [Deploying the Artifacts](../../README.md).
-
 ## Running the PoC
 
 To run the PoC on the Chromebooks, run:
@@ -54,3 +50,6 @@ Chunk: 0x760ec00000 + [  2048.0 kB] -> c
 Took 20000 ns to check 409600000 bytes = 19073.486328 GBps
 ```
 
+## Paper result:
+From 6.1. Paragraph Evaluation:
+- less than 10 seconds runtime

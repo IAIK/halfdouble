@@ -23,11 +23,6 @@ Please follow [PTEditor](../../README.md) to install the PTEditor kernel module.
 modprobe pteditor
 ```
 
-
-## Deploying the Artifacts
-
-Please see [Deploying the Artifacts](../../README.md).
-
 ## Running the PoC
 
 To run the PoC on the Chromebook, run:
@@ -35,6 +30,8 @@ To run the PoC on the Chromebook, run:
 ```
 ./c2_blind_hammering_aarch64
 ```
+
+Note: This PoC will run in an endless loop and not terminate! To stop hit `Ctrl+c`.
 
 ### Expected output:
 
@@ -55,3 +52,8 @@ tries: 522, UC flips 0->1: 1, 1->0: 2, FLUSH flips 0->1: 0, 1->0: 0
 ...
 ```
 
+## Paper result:
+
+From 6.2. Paragraph Evaluation:
+- 30 exploitable bit flips on Chromebook 2 within 11.6 hours.
+- Estimated bit flip times for the other devices were calculated using the overall rate from Table 1 multiplied by the factor of "exploitable_bitflips/overall_bitflips" of the Chromebook 2.

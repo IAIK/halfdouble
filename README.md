@@ -69,19 +69,6 @@ Please follow each README.md in the subfolders:
 - [Exploit](./end_to_end_exploit)
 
 
-# Deploying the Artifacts
-Deploying the artifacts to the provided hardware. Each of the Makefiles features the following two targets:
-
-```
-make cb1
-```
-
-```
-make cb2
-```
-
-These targets copy the generated binary to the test systems if the `.shh/config` file is set up correctly. More details for this is provided via hotcrp.
-
 # Warnings
 **Warning #1**: We are providing this code as-is. You are responsible for protecting yourself, your property and data, and others from any risks caused by this code. This code may cause unexpected and undesirable behavior to occur on your machine.
 

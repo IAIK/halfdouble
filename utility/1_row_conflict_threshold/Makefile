@@ -23,13 +23,3 @@ $(BINARY)%: main.cpp
 clean:
 	@rm -rf $(BINARY)_aarch64 $(BINARY)_x86
 
-cb1: DEST := chromebook1
-cb2: DEST := chromebook2
-
-cb1: deploy
-cb2: deploy
-
-deploy: aarch64
-	scp $(BINARY)_aarch64 root@$(DEST):/root/
-	ssh $(DEST) "chmod +x $(BINARY)_aarch64"
-
